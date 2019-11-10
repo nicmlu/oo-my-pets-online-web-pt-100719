@@ -10,9 +10,9 @@ class Dog
     @@all.push(self)
   end
   
-  # def mood=(mood)
-  #   @mood = mood
-  # end 
+  def mood=(mood)
+    @mood = mood
+  end 
   
   def mood
     @mood
