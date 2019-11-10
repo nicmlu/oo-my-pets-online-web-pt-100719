@@ -51,7 +51,7 @@ class Owner
     end
   end 
   
-  def feed_cat 
+  def feed_cats 
     Cat.all.select do |cats| cats.owner == self 
     cats.mood = "happy"
     end
