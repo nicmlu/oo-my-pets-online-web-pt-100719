@@ -46,8 +46,9 @@ class Owner
   end
   
   def walk_dogs 
-    Dog.all.select do |dogs| dogs.owner == self}
+    Dog.all.select do |dogs| dogs.owner == self 
     dogs.mood = "happy"
+    end
   end 
   
   def feed_cat 
