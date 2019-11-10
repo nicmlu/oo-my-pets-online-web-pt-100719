@@ -72,7 +72,7 @@ class Owner
     
     Cat.all.select do |cats| cats.owner == self 
     cats.owner = nil
-     
     end
+    
   end 
 end
