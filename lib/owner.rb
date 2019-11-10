@@ -73,6 +73,12 @@ class Owner
     Cat.all.select do |cats| cats.owner == self 
     cats.owner = nil
     end
-    
+  end 
+  
+  def self.list_pets
+   all_dogs = Dog.all.select {|dog| dog.owner == self}
+   all_cats = Cat.all.select {|cat| cat.owner == self}
+   
+   puts "I have #{all_dogs.count} dogs(s), and #{all_cats.count} cat(s)."
   end 
 end
